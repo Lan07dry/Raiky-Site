@@ -1,49 +1,64 @@
-/* ===== RESET SIMPLE ===== */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* ===== BODY AVEC IMAGE DE FOND ===== */
+/* Corps de page avec image de fond */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-	min-height: 100vh;
-
-	background-image: url("images/Fond.png");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/fond.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
 }
 
-/* ===== CARTE CENTRALE ===== */
-.card {
-	max-width: 620px;
-	width: 90%;
-	padding: 30px;
-
-	background: rgba(255, 255, 255, 0.85);
-	backdrop-filter: blur(5px);
-
-	border-radius: 20px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-	text-align: center;
+/* Conteneur principal centré */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* léger voile pour lisibilité */
 }
 
-/* ===== TITRE ===== */
+/* Logo */
+.logo {
+    width: 150px;
+    margin: 20px auto;
+}
+
+/* Contenu principal */
+main {
+    padding: 50px 20px;
+}
+
 h1 {
-	font-size: 28px;
-	margin-bottom: 15px;
-	color: #111;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4B0082; /* violet doux */
 }
 
-/* ===== PARAGRAPHE ===== */
 p {
-	font-size: 16px;
-	color: #555;
-	margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.btn {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6A0DAD;
+}
+
+/* Pied de page */
+footer {
+    padding: 15px;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 0.9rem;
 }
