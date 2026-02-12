@@ -1,64 +1,86 @@
-/* Corps de page avec image de fond */
-body {
+body, html {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    font-family: Arial, sans-serif;
     background-image: url('images/fond.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: #333;
 }
 
-/* Conteneur principal centré */
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+    background: rgba(255,255,255,0.95);
+    padding: 20px;
+}
+
+header {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.85); /* léger voile pour lisibilité */
+    padding: 20px;
 }
 
-/* Logo */
 .logo {
-    width: 150px;
-    margin: 20px auto;
+    width: 120px;
 }
 
-/* Contenu principal */
-main {
-    padding: 50px 20px;
+.section {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #4B0082; /* violet doux */
+.product {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.product input {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
 }
 
-/* Bouton */
 .btn {
-    background-color: #4B0082;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
+    background: #4B0082;
+    color: white;
+    padding: 12px 25px;
     border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 .btn:hover {
-    background-color: #6A0DAD;
+    background: #6A0DAD;
 }
 
-/* Pied de page */
-footer {
+.paiement {
+    background: #f4f4f4;
+}
+
+.payment-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+#panier {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 25px;
     padding: 15px;
-    background-color: rgba(0,0,0,0.1);
-    font-size: 0.9rem;
+    border-radius: 50%;
+    text-decoration: none;
 }
