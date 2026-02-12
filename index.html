@@ -3,98 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raiky - Boutique Officielle</title>
+<title>Raiky – Soins capillaires naturels</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<div class="container">
-
 <header>
-    <img src="images/logo-raiky.png" class="logo">
-    <h2>Raiky - Soins Capillaires Naturels</h2>
+<div class="container nav">
+<h1 class="logo-text">Raiky</h1>
+<nav>
+<a href="#home">Accueil</a>
+<a href="#about">À propos</a>
+<a href="#services">Services</a>
+<a href="#shop">Boutique</a>
+<a href="#temoignages">Témoignages</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
-<section class="section">
-    <h2>Nos Produits</h2>
-
-    <div class="product">
-        <h3>Shampooing Naturel</h3>
-        <p>25 000 Ar</p>
-        <input type="number" id="prod1" min="0" value="0">
-    </div>
-
-    <div class="product">
-        <h3>Masque Réparateur</h3>
-        <p>30 000 Ar</p>
-        <input type="number" id="prod2" min="0" value="0">
-    </div>
-
-    <div class="product">
-        <h3>Huile Capillaire</h3>
-        <p>20 000 Ar</p>
-        <input type="number" id="prod3" min="0" value="0">
-    </div>
-
-    <button class="btn" onclick="calculerTotal()">Voir le total</button>
-
-    <div id="panier"></div>
+<section id="home" class="hero">
+<div class="hero-content">
+<h2>Tes cheveux, ton pouvoir.</h2>
+<h1>Aime tes racines. Soigne ton reflet.</h1>
+<a href="#contact" class="btn">Réserver maintenant</a>
+</div>
 </section>
 
-<section class="section paiement">
-    <h2>Paiement Orange Money</h2>
-    <div class="payment-box">
-        <p>Numéro : <strong>032 95 728 69</strong></p>
-        <p>Nom : <strong>Raiky</strong></p>
-        <p>Après paiement, cliquez sur confirmer :</p>
-        <button class="btn" onclick="envoyerCommande()">Confirmer et Envoyer</button>
-    </div>
+<section id="about" class="section">
+<h2>À propos de Raiky</h2>
+<p>
+Raiky est une marque de soins capillaires naturels dédiée à la valorisation
+des cheveux crépus, bouclés, frisés et locks.
+Nous encourageons l’amour de soi à travers des soins authentiques,
+bienveillants et personnalisés.
+</p>
+
+<div class="grid-3">
+<div class="card">
+<h3>Notre Mission</h3>
+<p>Offrir des soins naturels accessibles et efficaces.</p>
+</div>
+<div class="card">
+<h3>Notre Vision</h3>
+<p>Devenir une référence dans les soins capillaires africains.</p>
+</div>
+<div class="card">
+<h3>Nos Valeurs</h3>
+<p>Authenticité – Bienveillance – Qualité – Respect.</p>
+</div>
+</div>
+</section>
+
+<section id="services" class="section light">
+<h2>Nos Services</h2>
+<div class="grid-3">
+<div class="card">
+<h3>Diagnostic personnalisé</h3>
+<p>Analyse complète de votre type de cheveux.</p>
+</div>
+<div class="card">
+<h3>Soins naturels</h3>
+<p>Produits adaptés à votre texture.</p>
+</div>
+<div class="card">
+<h3>Suivi capillaire</h3>
+<p>Accompagnement personnalisé.</p>
+</div>
+</div>
+</section>
+
+<section id="shop" class="section">
+<h2>Boutique Raiky</h2>
+<div class="grid-3">
+<div class="card">
+<h3>Shampooing Naturel</h3>
+<p>25 000 Ar</p>
+<input type="number" id="prod1" min="0" value="0">
+</div>
+<div class="card">
+<h3>Masque Réparateur</h3>
+<p>30 000 Ar</p>
+<input type="number" id="prod2" min="0" value="0">
+</div>
+<div class="card">
+<h3>Huile Capillaire</h3>
+<p>20 000 Ar</p>
+<input type="number" id="prod3" min="0" value="0">
+</div>
+</div>
+
+<button onclick="calculerTotal()" class="btn">Voir Total</button>
+<div id="panier"></div>
+</section>
+
+<section id="temoignages" class="section light">
+<h2>Témoignages</h2>
+<div class="grid-3">
+<div class="card">
+<p>"Mes cheveux sont plus forts et brillants."</p>
+<strong>– Aina</strong>
+</div>
+<div class="card">
+<p>"Produits naturels incroyables."</p>
+<strong>– Miora</strong>
+</div>
+<div class="card">
+<p>"Enfin une marque qui nous valorise."</p>
+<strong>– Tiana</strong>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Paiement Orange Money</h2>
+<p><strong>032 95 728 69</strong></p>
+<button onclick="envoyerCommande()" class="btn">Confirmer Paiement</button>
+</section>
+
+<section id="contact" class="section dark">
+<h2>Contact</h2>
+<p>Email : landrysetraniaina@gmail.com</p>
+<p>WhatsApp : +261 32 95 728 69</p>
+
+<div class="socials">
+<a href="https://wa.me/261329572869"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/profile.php?id=100087730376739"><i class="fab fa-facebook"></i></a>
+</div>
+
+<img src="images/logo-raiky.png" class="logo-bottom">
+
 </section>
 
 <footer>
-    <p>© 2026 Raiky - Tous droits réservés</p>
+© 2026 Raiky - Tous droits réservés
 </footer>
-
-</div>
-
-<a href="https://wa.me/261329572869" class="whatsapp-float" target="_blank">💬</a>
 
 <script>
 let total = 0;
 let detailCommande = "";
 
 function calculerTotal() {
-    let q1 = parseInt(document.getElementById("prod1").value);
-    let q2 = parseInt(document.getElementById("prod2").value);
-    let q3 = parseInt(document.getElementById("prod3").value);
+let q1 = parseInt(document.getElementById("prod1").value);
+let q2 = parseInt(document.getElementById("prod2").value);
+let q3 = parseInt(document.getElementById("prod3").value);
 
-    let p1 = 25000;
-    let p2 = 30000;
-    let p3 = 20000;
+total = (q1*25000) + (q2*30000) + (q3*20000);
 
-    total = (q1*p1) + (q2*p2) + (q3*p3);
+detailCommande =
+`Commande Raiky:%0A` +
+`Shampooing x${q1}%0A` +
+`Masque x${q2}%0A` +
+`Huile x${q3}%0A` +
+`Total: ${total} Ar`;
 
-    detailCommande =
-        `Commande Raiky:%0A` +
-        `Shampooing x${q1}%0A` +
-        `Masque x${q2}%0A` +
-        `Huile x${q3}%0A` +
-        `Total: ${total} Ar`;
-
-    document.getElementById("panier").innerHTML =
-        "<h3>Total : " + total + " Ar</h3>";
+document.getElementById("panier").innerHTML =
+"Total : " + total + " Ar";
 }
 
 function envoyerCommande() {
-    if(total === 0){
-        alert("Veuillez sélectionner au moins un produit.");
-        return;
-    }
-
-    window.open(
-        "https://wa.me/261329572869?text=" + detailCommande,
-        "_blank"
-    );
+if(total === 0){
+alert("Veuillez sélectionner au moins un produit.");
+return;
+}
+window.open("https://wa.me/261329572869?text=" + detailCommande, "_blank");
 }
 </script>
 
